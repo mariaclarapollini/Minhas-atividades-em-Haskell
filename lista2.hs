@@ -67,7 +67,5 @@ correspondentes:
 Dica: Procure usar a função zip.-}
 
 produtoEscalar :: [Int] -> [Int] -> Int
-listaZipada :: [Int] -> [Int] -> [(Int, Int)]
-listaZipada xs ys = zip xs ys
-produtoEscalar xs ys = sum[x * y | (x, y) <- listaZipada xs ys]
+produtoEscalar xs ys = sum[x * y | (x, y) <- zip xs ys]
 
